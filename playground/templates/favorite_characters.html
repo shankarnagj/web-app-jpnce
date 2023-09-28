@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en-IN">
+    <head>  
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title of the page -->
+        <title>My Favorite movie characters</title>
+        
+        <!-- CDN for jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>        
+        
+        <!-- CDN for Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        
+        <!-- CSS style for the HTML elements -->
+        <style>
+            .row{
+                padding: 20px;
+            }
+            [class*="col"]{
+                padding: 10px;
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <!-- Creating the container -->
+        <div class="container">
+
+            <!-- Creating the first row inside the container for the heading and paragraph -->
+            <div class="row">
+                <div class="col">
+                    <h1 id="heading1"> Favorite Movie Characters</h1>
+                </div>
+            </div>
+
+
+            <!-- Creating the Second row inside the container for buttons -->
+            <div class="row">
+                <div class="col">
+                    <button type="button"  onClick="fadeOut()" class="btn btn-danger" >Thanos Snap</button>
+                    <button type="button"  onClick="fadeIn()"  class="btn btn-primary">Hulk Snap </button>
+                </div> 
+            </div>
+
+
+            <!-- Creating 3rd row for image and about the image -->
+            <div class="row">
+                <div id="imgRemove1"  class="col-md-3 col-6">
+                    <img src="https://images.indianexpress.com/2018/04/avengers-blackwidow.jpg?w=630" alt="Black widow" class="img-fluid rounded shadow"></img>
+
+                </div>
+                <div id="imgRemove2" class="col-md-3 col-6">
+                    <h3>About Black Widow</h3>
+                    <p> 
+                        Natasha Romanoff, the Black Widow, is a former Russian spy turned superhero. Her exceptional combat skills, marksmanship, and espionage expertise make her a formidable asset to the Avengers. 
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <img src="https://images.indianexpress.com/2018/04/avengers-iron-man.jpg?w=630" alt="Iron man" class="img-fluid rounded shadow"></img>
+
+                </div>
+                <div class="col-md-3 col-6">
+                    <h3>About Iron man</h3>
+                    <p> 
+                        Tony Stark, the genius billionaire inventor, becomes the armored Avenger, Iron Man. Using his intelligence, he designs and builds the iconic Iron Man suits, equipping himself with an array of high-tech weaponry.
+                    </p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <img src="https://images.indianexpress.com/2018/04/avengers-hulk.jpg?w=630" alt="hulk" class="img-fluid rounded shadow"></img>
+
+                </div>
+                <div class="col-md-3 col-6">
+                    <h3>About Hulk</h3>
+                    <p> 
+                        Dr. Bruce Banner, the Hulk, is a brilliant scientist with a remarkable transformational ability. When provoked or stressed, he morphs into the Hulk, a colossal green behemoth with unparalleled strength.
+                    </p>
+                </div>
+
+                <div id="imgRemove3" class="col-md-3 col-6">
+                    <img src="https://images.indianexpress.com/2018/04/avengers-doctorstrange.jpg?w=6300" alt="Doctor strange" class="img-fluid rounded shadow"></img>
+
+                </div>
+                <div id="imgRemove4" class="col-md-3 col-6">
+                    <h3>About Doctor Strange</h3>
+                    <p> 
+                        Doctor Stephen Strange is a former neurosurgeon turned Sorcerer Supreme. After a life-altering accident, he delves into the mystic arts, mastering spells and dimensions. 
+                    </p>
+                </div>
+                <div id="imgRemove5" class="col-md-3 col-6">
+                    <img src="https://images.indianexpress.com/2018/04/avengers-thor.jpg?w=630" alt="Thor" class="img-fluid rounded shadow"></img>
+
+                </div>
+                <div id="imgRemove6" class="col-md-3 col-6">
+                    <h3>About Thor</h3>
+                    <p> 
+                        Thor, the God of Thunder, wields the mighty Mjolnir, a mystical hammer that grants him control over lightning and thunder. As the prince of Asgard, he is a formidable warrior with godly strength and durability.
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <img src="https://images.indianexpress.com/2018/04/avengers-captain-america.jpg?w=630" alt="Captain america" class="img-fluid rounded shadow"></img>
+
+                </div>
+                <div class="col-md-3 col-6">
+                    <h3>About Captain America</h3>
+                    <p> 
+                        Captain America, also known as Steve Rogers, is the embodiment of patriotism and honor. Enhanced with the Super Soldier Serum, he possesses superhuman strength, agility, and an unbreakable shield. 
+                    </p>
+                </div>
+
+            </div>
+
+            
+
+
+        </div>
+        
+            <script>
+
+                function fadeOut(){
+                    $("#imgRemove1").fadeOut(3000);
+                    $("#imgRemove2").fadeOut(3000);
+                    $("#imgRemove3").fadeOut(3000);
+                    $("#imgRemove4").fadeOut(3000);
+                    $("#imgRemove5").fadeOut(3000);
+                    $("#imgRemove6").fadeOut(3000);
+            
+                }
+                function fadeIn(){
+                    $("#imgRemove1").fadeIn(3000);
+                    $("#imgRemove2").fadeIn(3000);
+                    $("#imgRemove3").fadeIn(3000);
+                    $("#imgRemove4").fadeIn(3000);
+                    $("#imgRemove5").fadeIn(3000);
+                    $("#imgRemove6").fadeIn(3000);
+                }
+
+            </script>
+    </body>
+    
+</html>
